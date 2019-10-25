@@ -1,0 +1,2 @@
+# cifrado
+Mi proyecto TROYA.  Es un pequeño script hecho en php 5.6 para ayudar a un amigo que quiere hacer un algoritmo de sustitución para poder cifrar información. Le comenté que no sería difícil descifrar el código pero que si cumpliría su objetivo de cifrar o enmascarar el contenido que el desea.  Considero que es una buena oportunidad para compartir algún programa que he podido realizar en php nativo. Pensaré en hacer una interfaz gráfica, pero no prometo nada.
