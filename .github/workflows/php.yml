@@ -1,9 +1,9 @@
-name: PHP CI
+name: Build and Deploy
 
 on:
   push:
     branches:
-      - main  # Cambia "main" por el nombre de tu rama principal si es diferente
+      - master  # Cambia "main" por el nombre de tu rama principal si es diferente
 
 jobs:
   build:
@@ -13,24 +13,4 @@ jobs:
     - name: Checkout código
       uses: actions/checkout@v2
 
-    - name: Configurar PHP
-      uses: shivammathur/setup-php@v2
-      with:
-        php-version: 7.4  # Cambia a la versión de PHP que estés utilizando
-
-    - name: Instalar dependencias
-      run: composer install  # Asume que usas Composer para gestionar dependencias
-
-    - name: Ejecutar pruebas
-      run: phpunit  # Asume que usas PHPUnit para pruebas
-
-    - name: Subir resultados de pruebas
-      uses: actions/upload-artifact@v2
-      with:
-        name: test-results
-        path: test-results  # Directorio donde se almacenan los resultados de las pruebas
-
-    - name: Reportar resultados de pruebas
-      uses: mikepenz/action-junit-report@v2
-      with:
-        report_path: test-results/junit.xml  # Ruta al archivo XML de resultados de pruebas
+    # Puedes agregar pasos adicionales aquí según tus necesidades
